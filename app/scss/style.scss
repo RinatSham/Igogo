@@ -298,14 +298,97 @@
   }
 }
 // end features
-.BG {
-  border-radius: 4px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
-  position: absolute;
-  left: 780px;
-  top: 1091px;
-  width: 361px;
-  height: 403px;
-  z-index: 692;
+
+// start featured-products
+
+.featured-products{
+  padding: 120px 0;
+  background-color: #eff1f5;
+  &__title{
+    padding: 40px 0 40px 30px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 50px;
+  }
+  &__item{
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    background-color: #fff;
+  }
 }
+.product{
+  background-color: #4e5760;
+  height: 450px;
+  max-width: 555px;
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.featured-products__item-inner{
+  max-width: 586px;
+  padding: 50px 60px 25px 50px;
+  height: 450px;
+  .title{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .text{
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .cat{
+    display: flex;
+    margin-bottom: 45px;
+    .cat__prop + .cat__prop{
+      margin-left: 8px;
+    }
+    &__prop{
+      padding: 7px 15px 7px 18px;
+      background-color: #f1f3f6;
+      border-radius: 25px;
+    }
+  }
+  .info{
+    padding-top: 23px;
+    border-top: 1px solid #ececec;
+    a{
+      text-align: center;
+      padding: 8px 0 10px;
+      max-width: 100px;
+      width: 100%;
+      background-color: #0674ec;
+      border-radius: 25px;
+      font-size: 15px;
+      color: #fff;
+      font-weight: 500;
+      line-height: 15px;
+    }
+  }
+}
+.author{
+  display: flex;
+  margin-bottom: 30px;
+  a{
+    display: flex;
+    align-items: center;
+  }
+}
+.prop{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.author-link{
+  span{
+    margin-left: 10px;
+  }
+}
+.author-link + .author-link{
+  margin-left: 20px;
+}
+// end featured-products
