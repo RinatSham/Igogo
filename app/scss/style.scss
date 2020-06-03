@@ -962,3 +962,153 @@
 }
 
 // end banner
+
+// start footer
+
+.footer{
+  background-color: #262b30;
+  color: #ababab;
+}
+.footer__top{
+  display: flex;
+  justify-content: space-between;
+  min-height: 530px;
+  padding: 110px 0;
+}
+.footer__info{
+  max-width: 270px;
+}
+.footer__logo{
+  width: 163px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+.footer__title{
+  margin-bottom: 30px;
+  color: #fff;
+  padding-top: 20px;
+}
+.footer__info-text{
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+.footer__info-phone,
+.footer__info-email,
+.footer__info-location{
+  padding-left: 30px;
+  color: #ababab;
+  &::before{
+    font-family: 'Linearicons-Free';
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+  }
+}
+.footer__info-phone{
+  margin-bottom: 15px;
+  position: relative;
+  &::before{
+    content: "\e830";
+  }
+}
+.footer__info-email{
+  position: relative;
+  margin-bottom: 15px;
+  &::before{
+    content: "\e818";
+  }
+}
+.footer__info-location{
+  position: relative;
+  line-height: 26px;
+  &::before{
+    content: "\e833";
+    top: 35%;
+  }
+}
+.footer__col{
+  max-width: 140px;
+}
+.footer__menu-list{
+  li{
+    font-size: 15px;
+    line-height: 32px;
+    a{
+      color: #ababab;
+    }
+  }
+}
+.footer__social{
+  max-width: 365px;
+}
+.footer__social-form{
+  position: relative;
+  margin-bottom: 47px;
+  input{
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 127px;
+    border-radius: 25px;
+    border: none;
+    &::placeholder{
+      color: #ababab;
+    }
+  }
+  button{
+    width: 110px;
+    height: 50px;
+    position: absolute;
+    right: -1px;
+    border-radius: 25px;
+    background-color: #0674ec;
+    border: none;
+    color: #fff;
+  }
+}
+.footer__social-list{
+  li{
+    display: inline-block;
+    border-radius: 50%;
+    & + li{
+      margin-left: 10px;
+    }
+    a{
+      width: 42px;
+      height: 42px;
+      background-image: url(../images/sprites.png);
+    }
+  }
+}
+.footer__social-twitter{
+  background-position: -55px 0;
+}
+.footer__social-google{
+  background-position: -110px 0;
+}
+.footer__social-din{
+  background-position: -165px 0;
+}
+.footer__social-in{
+  background-position: -220px 0;
+}
+.footer__social-earth{
+  background-position: -276px 0;
+}
+.footer__copy{
+  background-color: #192027;
+  color: #999;
+  min-height: 95px;
+  padding: 40px 0;
+  text-align: center;
+  a{
+    color: #fff;
+  }
+}
+
+// end footer
