@@ -26,6 +26,30 @@ $(".rate-star").rateYo({
   readOnly: true
 });
 
+$('select').styler();
+
+$(".js-range-slider").ionRangeSlider({
+  type: "double",
+  min: 0,
+  max: 330,
+  from: 30,
+  to: 300,
+  prefix: "$",
+});
+
+$(".filter-nav__btn-list").on('click', function(){
+  $('.products__item').addClass('list');
+  $('.filter-nav__btn-list').addClass('filter-nav__btn-list--active');
+  $('.filter-nav__btn-grid').removeClass('filter-nav__btn-grid--active');
+
+
+});
+$(".filter-nav__btn-grid").on('click', function(){
+  $('.products__item').removeClass('list');
+  $('.filter-nav__btn-grid').addClass('filter-nav__btn-grid--active');
+  $('.filter-nav__btn-list').removeClass('filter-nav__btn-list--active');
+});
+
 var mixer = mixitup('.filter__inner-box');
 
 });
