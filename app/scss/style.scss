@@ -41,6 +41,14 @@
   color: #fff;
   }
 }
+.header__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__btn-menu{
+  display: none;
+}
 .header__circle{
   margin-right: 45px;
   a{
@@ -113,7 +121,8 @@
   a{
     text-transform: uppercase;
     color: #333;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
   }
 }
 .search__inner-form{
@@ -1688,3 +1697,110 @@
 
 
 // end popular-products
+
+// start Login
+
+.login{
+  padding-top: 70px;
+  padding-bottom: 120px;
+  background-color: #eff1f5;
+}
+.login__box{
+  max-width: 555px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  padding: 60px 0;
+}
+.login__head{
+  text-align: center;
+  border-bottom: 1px solid #e8ebf0;
+}
+.login__head-title{
+  font-size: 26px;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 28px;
+}
+.login__head-text{
+  color: #555;
+  margin-bottom: 30px;
+}
+.login__form{
+  padding: 0 50px;
+  form{
+    span{
+      color: #555;
+    }
+  }
+  .jq-checkbox, .jq-radio{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #e8ebf0;
+    background: #fff;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  .jq-checkbox.login__form-checkbox.checked{
+    background-color: #0674ec;
+    border: none;
+  }
+  .jq-checkbox.checked .jq-checkbox__div{
+    width: 9px;
+    height: 6px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(-50deg) translateY(3.5px);
+  }
+}
+.login__form-label{
+  display: block;
+  margin-top: 30px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.login__form-input{
+  display: block;
+  width: 100%;
+  background-color: rgb(244, 245, 248);
+  height: 51px;
+  border: none;
+  padding: 0 20px;
+}
+.login__form-checkbox{
+  margin-top: 30px;
+  margin-right: 9px;
+}
+.login__form-btn{
+  margin-top: 30px;
+  display: block;
+  min-width: 190px;
+  background-color: rgb(6, 116, 236);
+  border-radius: 25px;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  border: none;
+  color: #fff;
+  padding: 0 7px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.login__footer{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  color: #898f96;
+  a{
+    color: #0674ec;
+  }
+}
+
+// end Login
+
+
+
+
+@import 'media';
