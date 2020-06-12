@@ -3,6 +3,14 @@ $(function(){
 $('.products__wrapper-slider').slick({
   prevArrow: '<button class="slick-arrow slick-prev"><span class="lnr lnr-chevron-left"></span></button>',
   nextArrow: '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+      }
+    },
+  ]
 });
 
 $('.feed__inner').slick({
@@ -10,6 +18,24 @@ $('.feed__inner').slick({
   slidesToScroll: 1,
   prevArrow: '<button class="slick-arrow slick-prev"><span class="lnr lnr-chevron-left"></span></button>',
   nextArrow: '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>',
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        arrows: false,
+        slidesToScroll: 2,
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+      }
+    },
+  ]
 });
 
 $('.feedback__bot').slick({
@@ -18,6 +44,16 @@ $('.feedback__bot').slick({
   variableWidth: true,
   prevArrow: '<button class="slick-arrow slick-prev"><span class="lnr lnr-chevron-left"></span></button>',
   nextArrow: '<button class="slick-arrow slick-next"><span class="lnr lnr-chevron-right"></span></button>',
+  responsive: [
+    {
+      breakpoint: 1201,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
 });
 
 $(".rate-star").rateYo({

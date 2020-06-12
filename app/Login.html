@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MartPlace</title>
+  <title>Login</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
@@ -122,11 +123,12 @@
             </div>
             <div class="login__form">
               <form>
-                <label class="login__form-label">Username</label>
-                <input class="login__form-input" type="text" placeholder="Enter your username...">
-                <label class="login__form-label">Password</label>
-                <input class="login__form-input" type="text" placeholder="Enter your password...">
-                <input class="login__form-checkbox" type="checkbox" name="" id=""> <span>Remember me</span>
+                <label class="login__form-label" for="name">Username</label>
+                <input class="login__form-input" id="name" type="text" placeholder="Enter your username...">
+                <label class="login__form-label" for="password">Password</label>
+                <input class="login__form-input" id="password" type="password" placeholder="Enter your password...">
+                <input class="login__form-checkbox" id="pass" type="checkbox" name="" id=""> 
+                <label for="pass">Remember me</label>
                 <button class="login__form-btn" type="submit">Login Now</button>
               </form>
               <div class="login__footer">
@@ -184,7 +186,7 @@
             </div>
             <div class="footer__social-form">
               <form>
-                <input type="text" placeholder="Enter email">
+                <input type="email" placeholder="Enter email">
                 <button type="submit">Submit</button>
               </form>
             </div>
